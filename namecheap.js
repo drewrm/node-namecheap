@@ -297,7 +297,7 @@ namecheap.prototype = {
         options.ApproverEmail = email;
         options.csr = csr;
         options.WebServerType = type;
-        return instance.command('ssl.activate', options, callback, 'POST');
+        return instance.command('ssl.activate', options, callback, 'GET');
       },
       create: function(type, years, code, callback) {
         if(!type)
